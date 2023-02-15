@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-
+// state? 컴포넌트 내부에서 바뀔 수 있는 값
 class Counter extends Component {
+	//컴포넌트에 state 설정시 constructor 메소드 사용해서 설정
 	constructor(props) {
 		super(props);
 
