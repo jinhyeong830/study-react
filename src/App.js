@@ -4,6 +4,7 @@ import Test from "./Test";
 import Test2 from "./Test2";
 import Counter from "./Counter";
 import Say from "./Say";
+import Event from "./Event";
 
 const App = () => {
 	return (
@@ -16,6 +17,7 @@ const App = () => {
 			<MyComponentClass favoriteNumber={77}>클래스의 child</MyComponentClass> */}
 			{/* <Counter /> */}
 			<Say />
+			<Event />
 		</>
 	);
 };
