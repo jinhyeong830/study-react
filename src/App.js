@@ -5,6 +5,7 @@ import Test2 from "./Test2";
 import Counter from "./Counter";
 import Say from "./Say";
 import Event from "./Event";
+import Sample from "./Sample";
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 			{/* <Counter /> */}
 			<Say />
 			<Event />
+			<Sample />
 		</>
 	);
 };
