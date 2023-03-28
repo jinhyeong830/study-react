@@ -7,7 +7,7 @@ import Say from "./Say";
 import Event from "./Event";
 import Sample from "./Sample";
 import Validation from "./Validation";
-
+// 클래스형 App.js
 const App = () => {
 	return (
 		<>
