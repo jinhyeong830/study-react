@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import MyComponent from "./MyComponent";
 import MyComponentClass from "./MyComponentClass";
 import Test from "./Test";
@@ -7,8 +8,18 @@ import Say from "./Say";
 import Event from "./Event";
 import Sample from "./Sample";
 import Validation from "./Validation";
+import LifeCycle from "./LifeCycle";
 
+function getRandomColor() {
+	return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
 const App = () => {
+	const [color, setColor] = useState("#000");
+
+	const handleClick = () => {
+		setColor(getRandomColor());
+		console.log("nn");
+	};
 	return (
 		<>
 			{/* <MyComponent name="hi" favoriteNumber={5}>
@@ -22,6 +33,9 @@ const App = () => {
 			<Event />
 			<Sample />
 			<Validation />
+			<button onClick={handleClick}>랜덤 색상</button>ff
+			<LifeCycle color={color} />
+			diq
 		</>
 	);
 };
