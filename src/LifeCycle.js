@@ -107,11 +107,12 @@ class LifeCycle extends Component {
 
 		return (
 			<>
+				{/* 아직 hook을 몰라서... ref있는 코드는 변경할 수가 없넹 */}
 				<h1 style={style} ref={(ref) => (this.myRef = ref)}>
 					{this.state.number}
 				</h1>
 
-				<p>color:{this.handleClick}</p>
+				<p>color:{this.state.color}</p>
 
 				<button onClick={this.handleClick}> 더하기</button>
 			</>
