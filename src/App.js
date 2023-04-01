@@ -13,6 +13,7 @@ import CounterFunction from "./CounterFunction";
 import Info from "./Info";
 import CounterReducer from "./CounterReducer";
 import AverageMemo from "./AverageMemo";
+import AverageCallback from "./AverageCallback";
 
 function getRandomColor() {
 	return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -59,6 +60,7 @@ const App = () => {
 			{/* Hooks : useReducer = 컴포넌트 업데이트 로직을 컴포넌트 밖으로 뺄 수 있음*/}
 			<CounterReducer />
 			<AverageMemo />
+			<AverageCallback />
 		</>
 	);
 };
